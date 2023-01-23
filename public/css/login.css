@@ -1,0 +1,51 @@
+@import url(general.css);
+
+:root {
+    --tipografía: roboto;
+
+    --size-titulares: 24px;
+    --size-precio: 18px;
+    --size-desc: 16px;
+
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a;
+}
+
+main form {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+main input {
+    width: 100%;
+    padding: 10px 5px;
+    border-radius: 5px;
+    border-color: rgba(0, 0, 0, 0);
+    margin: 5px 0;
+}
+
+main button {
+    display: block;
+    width: 49%;
+    margin: 5px auto;
+    padding: 10px;
+    border: solid 1px rgb(79, 79, 79);
+    border-radius: 5px;
+    background-color: var(--celeste);
+    color: white;
+    transition: all 400ms;
+}
+
+main button:hover{
+    background-color: #0022AA;
+}
+/* ----------------------------------Tablets---------------------------------- */
+@media (min-width: 500px) {}
+
+/* ----------------------------------Desktop---------------------------------- */
+@media (min-width: 700px) {}

@@ -1,0 +1,42 @@
+@import url(general/normalize.css);
+@import url(general/header.css);
+@import url(general/footer.css);
+
+:root {
+    --tipografía: roboto;
+
+    --size-titulares: 24px;
+    --size-precio: 18px;
+    --size-desc: 16px;
+
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: var(--tipografía);
+    font-size: 12px;
+    background-color: var(--gris-claro);
+}
+
+main {
+    width: 90%;
+    margin: auto;
+    max-width: 1400px;
+}
+
+h2 {
+    font-size: var(--size-titulares);
+    margin: 2rem 0;
+    width: 95%;
+}

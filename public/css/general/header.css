@@ -1,0 +1,136 @@
+:root {
+    --tipografía: roboto;
+
+    --size-titulares: 24px;
+    --size-precio: 18px;
+    --size-description-descuento: 16px;
+
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a;
+}
+
+.header {
+    background-color: var(--amarillo);
+    margin-bottom: 5px;
+}
+
+.navbar-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 20px 0;
+}
+
+.logo {
+    width: 46%;
+    max-width: 250px;
+}
+
+.header form {
+    position: relative;
+    width: 46%;
+    margin: 0 10px;
+}
+
+.header input {
+    width: 100%;
+    padding: 10px 5px;
+    border-radius: 5px;
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.lupa {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 10px;
+    right: 2%;
+}
+
+.navbar-top p {
+    margin: 12px 0px;
+}
+
+.header ul {
+    display: none;
+}
+
+.burger-menu {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.burger-menu i {
+    background-color: var(--azul);
+    color: var(--gris-claro);
+    border-radius: 10%;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.banner img {
+    width: 100%;
+    margin-bottom: -4px;
+}
+
+/* ----------------------------------Tablets---------------------------------- */
+@media (min-width: 500px) {
+    .navbar-top {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .navbar-top p {
+        text-align: right;
+        margin: 0;
+        max-width: 142px;
+    }
+
+    .navbar-bottom {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .header ul {
+        display: flex;
+        list-style-type: none;
+        min-width: 40%;
+    }
+
+    .header li {
+        width: 33%;
+        margin: 10px 0px;
+        text-align: center;
+    }
+
+    .header li a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+}
+
+/* ----------------------------------Desktop---------------------------------- */
+@media (min-width: 700px) {
+    .navbar-top,
+    .navbar-bottom,
+    .banner {
+        max-width: 1400px;
+        margin: auto;
+    }
+
+    .navbar-top p {
+        width: 352px;
+        max-width: 235px;
+    }
+}

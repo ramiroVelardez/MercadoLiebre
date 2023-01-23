@@ -1,0 +1,102 @@
+@import url(general.css);
+
+:root {
+    --tipografía: roboto;
+
+    --size-titulares: 24px;
+    --size-precio: 18px;
+    --size-desc: 16px;
+
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a;
+}
+
+main section.principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+main article {
+    background-color: white;
+    margin: 10px;
+    width: 80%;
+}
+
+main article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+main article:hover .descripcion {
+    display: block;
+}
+main article:hover .camion {
+    transform: rotateZ(-90deg);
+}
+
+main article img {
+    width: 100%;
+}
+
+main article section {
+    border-top: 1px solid var(--gris-claro);
+    padding: 15px;
+    position: relative;
+}
+
+main .camion {
+    display: block;
+    font-size: 16px;
+    color: var(--verde);
+    border: 1px solid var(--verde);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: all 500ms;
+}
+
+main header {
+    display: flex;
+    align-items: center;
+
+}
+
+main .precio {
+    font-size: var(--size-precio);
+    flex-grow: 0.3;
+}
+
+main .descuento {
+    font-size: var(--size-desc);
+    color: var(--verde);
+    flex-grow: 0.7;
+}
+
+main article footer p {
+    display: none;
+    font-size: var(--size-desc);
+    color: var(--gris-oscuro);
+}
+
+/* ----------------------------------Tablets---------------------------------- */
+@media (min-width: 500px) {
+    main article {
+        width: 45%;
+    }
+}
+
+/* ----------------------------------Desktop---------------------------------- */
+@media (min-width: 700px) {
+    main article {
+        width: 20%;
+    }
+}
