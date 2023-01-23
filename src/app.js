@@ -11,14 +11,15 @@ const path = require('path');
 app.use(express.static(path.join(__dirname, '../public')))
 
 // Ponemos a escuchar el servidor
-const p = 1|| 3000;
-app.listen(3033, () => {
-    console.log('http://localhost:3033');
+const port = process.env.PORT || 3000;
+
+app.listen(port, () => {
+    console.log('http://localhost:' + port);
 });
 
 // Definimos las rutas a los distintos pedidos que nuestro sitio sabe responder
-let appget= (x, y) => app.get(x, (req, res) => res.sendFile(path.join(__dirname, y)))
-let apppost= (x, y) => app.post(x, (req, res) => res.sendFile(path.join(__dirname, y)))
+let appget = (x, y) => app.get(x, (req, res) => res.sendFile(path.join(__dirname, y)))
+let apppost = (x, y) => app.post(x, (req, res) => res.sendFile(path.join(__dirname, y)))
 
 appget('/', './views/home.html')
 appget('/registrar', './views/register.html')
