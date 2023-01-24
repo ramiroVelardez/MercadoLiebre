@@ -47,6 +47,7 @@ main label input {
 
 main .buttons {
     display: flex;
+    justify-content: space-evenly;
 }
 
 main button {
@@ -57,12 +58,6 @@ main button {
 }
 
 main .registrarse {
-    width: 49%;
-    margin: auto;
-}
-
-main .registrarse button {
-    width: 100%;
     background-color: var(--celeste);
     color: white;
 }
@@ -76,7 +71,7 @@ main .registrarse button {
 
     main input {
         width: 49.5%;
-    }
+    } 
 
     main .domicilio {
         width: 100%;

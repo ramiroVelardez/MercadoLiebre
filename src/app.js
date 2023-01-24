@@ -18,9 +18,10 @@ app.listen(port, () => {
 });
 
 // Definimos las rutas a los distintos pedidos que nuestro sitio sabe responder
-let appget = (x, y) => app.get(x, (req, res) => res.sendFile(path.join(__dirname, y)))
-let apppost = (x, y) => app.post(x, (req, res) => res.sendFile(path.join(__dirname, y)))
+let appGet = (x, y) => app.get(x, (req, res) => res.sendFile(path.join(__dirname, y)))
+let appPost = (x, y) => app.post(x, (req, res) => res.sendFile(path.join(__dirname, y)))
 
-appget('/', './views/home.html')
-appget('/registrar', './views/register.html')
-appget('/login', './views/login.html')
+appGet('/', './views/home.html')
+appPost('/', './views/home.html')
+appGet('/registrar', './views/register.html')
+appGet('/login', './views/login.html')

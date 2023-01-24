@@ -39,7 +39,7 @@
 
 .header input {
     width: 100%;
-    padding: 10px 5px;
+    padding: 10px 14% 10px 5px;
     border-radius: 5px;
     border-color: rgba(0, 0, 0, 0);
 }
@@ -48,7 +48,7 @@
     background-color: rgba(0, 0, 0, 0);
     border-color: rgba(0, 0, 0, 0);
     position: absolute;
-    top: 10px;
+    top: 12px;
     right: 2%;
 }
 
@@ -122,11 +122,16 @@
 
 /* ----------------------------------Desktop---------------------------------- */
 @media (min-width: 700px) {
+
     .navbar-top,
     .navbar-bottom,
     .banner {
         max-width: 1400px;
         margin: auto;
+    }
+
+    .header input {
+        padding: 10px 10% 10px 5px;
     }
 
     .navbar-top p {
