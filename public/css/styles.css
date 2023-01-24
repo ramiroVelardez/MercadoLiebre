@@ -37,6 +37,7 @@ main article:hover .descripcion {
 }
 main article:hover .camion {
     transform: rotateZ(-360deg);
+    right: 76px;
 }
 
 main article img {
@@ -61,7 +62,7 @@ main .camion {
     position: absolute;
     right: 20px;
     top: -15px;
-    transition: all 500ms;
+    transition: ease-in-out .5s;
 }
 
 main header {
