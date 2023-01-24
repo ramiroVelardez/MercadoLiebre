@@ -30,7 +30,7 @@
     color: var(--celeste);
     font-size: 2em;
     margin: 70px 0 10px;
-    transition: all 400ms;
+    transition: color 400ms;
 }
 
 .footer i:hover {
